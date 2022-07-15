@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="499.0" prefWidth="1115.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.reneyuman.controller.HorariosController">
+   <children>
+      <AnchorPane prefHeight="499.0" prefWidth="193.0" styleClass="anchor-pane2" stylesheets="@../resource/KinalMallCss.css">
+         <children>
+            <AnchorPane layoutX="4.0" layoutY="-1.0" prefHeight="167.0" prefWidth="186.0" style="-fx-background-radius: 0 0 50 50;" styleClass="anchor-pane3" stylesheets="@../resource/KinalMallCss.css">
+               <children>
+                  <ImageView fitHeight="144.0" fitWidth="127.0" layoutX="31.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/Horarios.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="62.0" layoutY="14.0" prefHeight="26.0" prefWidth="66.0" text="Horarios">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <Button fx:id="btnNuevo" layoutX="91.0" layoutY="199.0" mnemonicParsing="false" onAction="#nuevo" prefHeight="34.0" prefWidth="83.0" style="-fx-background-radius: 0 0 0 0;" styleClass="button2" stylesheets="@../resource/KinalMallCss.css" text="Nuevo" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnEditar" layoutX="90.0" layoutY="311.0" mnemonicParsing="false" onAction="#editar" prefHeight="34.0" prefWidth="83.0" style="-fx-background-radius: 0 0 0 0;" styleClass="button2" text="Editar" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnEliminar" layoutX="91.0" layoutY="256.0" mnemonicParsing="false" onAction="#eliminar" prefHeight="34.0" prefWidth="83.0" style="-fx-background-radius: 0 0 0 0;" styleClass="button2" stylesheets="@../resource/KinalMallCss.css" text="Eliminar" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnReporte" layoutX="91.0" layoutY="368.0" mnemonicParsing="false" onAction="#reporte" prefHeight="34.0" prefWidth="83.0" style="-fx-background-radius: 0 0 0 0;" styleClass="button2" stylesheets="@../resource/KinalMallCss.css" text="Reporte" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <ImageView fx:id="imgNuevo" fitHeight="46.0" fitWidth="46.0" layoutX="30.0" layoutY="197.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Añadir2.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgEditar" fitHeight="46.0" fitWidth="46.0" layoutX="28.0" layoutY="308.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Editar.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgEliminar" fitHeight="46.0" fitWidth="46.0" layoutX="31.0" layoutY="252.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Eliminar.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgReporte" fitHeight="46.0" fitWidth="40.0" layoutX="33.0" layoutY="365.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Informe.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="38.0" fitWidth="48.0" layoutX="78.0" layoutY="447.0" onMouseClicked="#menuPrincipal" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Casita.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="193.0" prefHeight="138.0" prefWidth="922.0" styleClass="anchor-pane3" stylesheets="@../resource/KinalMallCss.css">
+         <children>
+            <GridPane layoutX="20.0" layoutY="14.0" prefHeight="108.0" prefWidth="868.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="208.0" minWidth="10.0" prefWidth="131.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="234.0" minWidth="10.0" prefWidth="127.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="235.0" minWidth="10.0" prefWidth="135.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="236.0" minWidth="10.0" prefWidth="176.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="259.0" minWidth="10.0" prefWidth="130.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="281.0" minWidth="10.0" prefWidth="186.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label prefHeight="21.0" prefWidth="121.0" text=" Codigo Horario">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtCodigoHorario" editable="false" prefHeight="31.0" prefWidth="124.0" GridPane.columnIndex="1">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="txtHorarioEntrada" editable="false" prefHeight="31.0" prefWidth="124.0" GridPane.columnIndex="3">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="txtLunes" editable="false" prefHeight="31.0" prefWidth="124.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="txtMartes" editable="false" prefHeight="31.0" prefWidth="124.0" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="txtHorarioSalida" editable="false" prefHeight="31.0" prefWidth="124.0" GridPane.columnIndex="5">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="txtMiercoles" editable="false" prefHeight="31.0" prefWidth="124.0" GridPane.columnIndex="5" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+                  <Label prefHeight="21.0" prefWidth="132.0" text=" Lunes" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="21.0" prefWidth="132.0" text=" Martes" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="21.0" prefWidth="132.0" text=" Horario Salida" GridPane.columnIndex="4">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="21.0" prefWidth="132.0" text=" Miercoles" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="21.0" prefWidth="132.0" text=" Viernes" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="21.0" prefWidth="121.0" text=" Jueves" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="21.0" prefWidth="132.0" text=" Horario Entrada" GridPane.columnIndex="2">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtJueves" editable="false" prefHeight="31.0" prefWidth="124.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="txtViernes" editable="false" prefHeight="31.0" prefWidth="124.0" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </GridPane>
+         </children>
+      </AnchorPane>
+      <TableView fx:id="tblHorarios" layoutX="205.0" layoutY="146.0" onKeyReleased="#seleccionarElemento" onMouseClicked="#seleccionarElemento" prefHeight="333.0" prefWidth="881.0" stylesheets="@../resource/KinalMallCss.css">
+         <columns>
+            <TableColumn fx:id="colCodigoHorario" prefWidth="105.0" text="Codigo Horario" />
+            <TableColumn fx:id="colHorarioEntrada" prefWidth="134.0" text="Horario Entrada" />
+            <TableColumn fx:id="colHorarioSalida" prefWidth="145.0" text="Horario Salida" />
+            <TableColumn fx:id="colLunes" prefWidth="99.0" text="Lunes" />
+            <TableColumn fx:id="colMartes" prefWidth="102.0" text="Martes" />
+            <TableColumn fx:id="colMiercoles" prefWidth="96.0" text="Miercoles" />
+            <TableColumn fx:id="colJueves" prefWidth="98.0" text="Jueves" />
+            <TableColumn fx:id="colViernes" prefWidth="101.0" text="Viernes" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

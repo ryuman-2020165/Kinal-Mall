@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="362.0" prefWidth="598.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.reneyuman.controller.LoginController">
+   <children>
+      <ImageView fitHeight="362.0" fitWidth="617.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Fondo%20Login.jpg" />
+         </image>
+      </ImageView>
+      <Pane layoutX="243.0" opacity="0.9" prefHeight="362.0" prefWidth="355.0" style="-fx-background-radius: 30 0 0 30;" styleClass="anchor-pane1" stylesheets="@../resource/KinalMallCss.css">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="78.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/LogoRecortado.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="txtUsuario" layoutX="103.0" layoutY="154.0" promptText="Usuario" style="-fx-background-color: transparent; -fx-border-color: #000000; -fx-border-width: 0px 0px 2px 0px;" />
+            <Button fx:id="btnLogin" layoutX="104.0" layoutY="263.0" mnemonicParsing="false" onAction="#login" prefHeight="34.0" prefWidth="149.0" style="-fx-background-radius: 0 0 0 0;" styleClass="button2" stylesheets="@../resource/KinalMallCss.css" text="Iniciar sesión" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <TextField fx:id="txtPassword" layoutX="103.0" layoutY="212.0" promptText="Contraseña" style="-fx-background-color: transparent; -fx-border-color: #000000; -fx-border-width: 0px 0px 2px 0px;" />
+            <Label layoutX="85.0" layoutY="317.0" onMouseClicked="#ventanaUsuario" text="¿No tiene cuenta? Registrese aqui..." textFill="#7398fa" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

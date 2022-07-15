@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="432.0" prefWidth="673.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.reneyuman.controller.UsuarioController">
+   <children>
+      <ImageView fitHeight="432.0" fitWidth="789.0" layoutX="-151.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/paisaje%20fondo.jpg" />
+         </image>
+      </ImageView>
+      <Pane layoutX="184.0" prefHeight="432.0" prefWidth="489.0" style="-fx-background-radius: 30 0 0 30;" styleClass="anchor-pane1" stylesheets="@../resource/KinalMallCss.css">
+         <children>
+            <ImageView fitHeight="102.0" fitWidth="94.0" layoutX="205.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Administracion.png" />
+               </image>
+            </ImageView>
+            <GridPane layoutX="50.0" layoutY="134.0" prefHeight="216.0" prefWidth="405.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="200.0" minWidth="10.0" prefWidth="169.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="200.0" minWidth="10.0" prefWidth="169.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="41.0" minHeight="10.0" prefHeight="41.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="45.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="49.0" minHeight="7.0" prefHeight="42.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="48.0" minHeight="8.0" prefHeight="43.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="41.0" minHeight="8.0" prefHeight="41.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label prefHeight="26.0" prefWidth="166.0" text="Codigo Usuario">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="26.0" prefWidth="166.0" text="Nombre del Usuario" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="26.0" prefWidth="166.0" text="Apellido del Usuario" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="26.0" prefWidth="166.0" text="Usuario" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="26.0" prefWidth="166.0" text="Contraseña" GridPane.rowIndex="4">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtCodigoUsuario" editable="false" prefHeight="31.0" prefWidth="113.0" styleClass="IngresotextoUsuarios" stylesheets="@../resource/KinalMallCss.css" GridPane.columnIndex="1">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="txtNombreUsuario" editable="false" prefHeight="31.0" prefWidth="113.0" styleClass="IngresotextoUsuarios" stylesheets="@../resource/KinalMallCss.css" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="txtApellidoUsuario" editable="false" prefHeight="31.0" prefWidth="113.0" styleClass="IngresotextoUsuarios" stylesheets="@../resource/KinalMallCss.css" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="txtUsuario" editable="false" prefHeight="31.0" prefWidth="113.0" styleClass="IngresotextoUsuarios" stylesheets="@../resource/KinalMallCss.css" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="txtPassword" editable="false" prefHeight="31.0" prefWidth="113.0" styleClass="IngresotextoUsuarios" stylesheets="@../resource/KinalMallCss.css" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </GridPane>
+            <Button fx:id="btnCancelar" layoutX="338.0" layoutY="370.0" mnemonicParsing="false" onAction="#ventanaLogin" prefHeight="34.0" prefWidth="83.0" style="-fx-background-radius: 0 0 0 0;" styleClass="button2" stylesheets="@../resource/KinalMallCss.css" text="Cancelar" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <ImageView fx:id="imgEliminar" fitHeight="46.0" fitWidth="46.0" layoutX="278.0" layoutY="366.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/cancelar.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="btnNuevo" layoutX="136.0" layoutY="370.0" mnemonicParsing="false" onAction="#nuevo" prefHeight="34.0" prefWidth="83.0" style="-fx-background-radius: 0 0 0 0;" styleClass="button2" stylesheets="@../resource/KinalMallCss.css" text="Guardar" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <ImageView fx:id="imgNuevo" fitHeight="46.0" fitWidth="46.0" layoutX="75.0" layoutY="365.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Añadir2.png" />
+               </image>
+            </ImageView>
+            <Pane layoutX="308.0" layoutY="38.0" prefHeight="46.0" prefWidth="94.0" style="-fx-background-radius: 30 30 30 30;" styleClass="paneusuarios" stylesheets="@../resource/KinalMallCss.css" />
+            <Label layoutX="325.0" layoutY="47.0" prefHeight="26.0" prefWidth="67.0" text="Usuarios" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="499.0" prefWidth="1219.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.reneyuman.controller.CuentaPorPagarController">
+   <children>
+      <AnchorPane prefHeight="499.0" prefWidth="193.0" styleClass="anchor-pane2" stylesheets="@../resource/KinalMallCss.css">
+         <children>
+            <AnchorPane layoutX="4.0" layoutY="-1.0" prefHeight="167.0" prefWidth="186.0" style="-fx-background-radius: 0 0 50 50;" styleClass="anchor-pane3" stylesheets="@../resource/KinalMallCss.css">
+               <children>
+                  <ImageView fitHeight="121.0" fitWidth="149.0" layoutX="33.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/Cuentas%20Por%20Pagar.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="25.0" layoutY="14.0" prefHeight="26.0" prefWidth="137.0" text="Cuentas por Pagar">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <Button fx:id="btnNuevo" layoutX="91.0" layoutY="199.0" mnemonicParsing="false" onAction="#nuevo" prefHeight="34.0" prefWidth="83.0" style="-fx-background-radius: 0 0 0 0;" styleClass="button2" stylesheets="@../resource/KinalMallCss.css" text="Nuevo" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnEditar" layoutX="90.0" layoutY="311.0" mnemonicParsing="false" onAction="#editar" prefHeight="34.0" prefWidth="83.0" style="-fx-background-radius: 0 0 0 0;" styleClass="button2" text="Editar" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnEliminar" layoutX="91.0" layoutY="256.0" mnemonicParsing="false" onAction="#eliminar" prefHeight="34.0" prefWidth="83.0" style="-fx-background-radius: 0 0 0 0;" styleClass="button2" stylesheets="@../resource/KinalMallCss.css" text="Eliminar" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnReporte" layoutX="91.0" layoutY="368.0" mnemonicParsing="false" onAction="#informe" prefHeight="34.0" prefWidth="83.0" style="-fx-background-radius: 0 0 0 0;" styleClass="button2" stylesheets="@../resource/KinalMallCss.css" text="Reporte" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <ImageView fx:id="imgNuevo" fitHeight="46.0" fitWidth="46.0" layoutX="30.0" layoutY="197.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Añadir2.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgEditar" fitHeight="46.0" fitWidth="46.0" layoutX="28.0" layoutY="308.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Editar.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgEliminar" fitHeight="46.0" fitWidth="46.0" layoutX="31.0" layoutY="252.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Eliminar.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgReporte" fitHeight="46.0" fitWidth="40.0" layoutX="33.0" layoutY="365.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Informe.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="38.0" fitWidth="48.0" layoutX="78.0" layoutY="435.0" onMouseClicked="#menuPrincipal" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Casita.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="193.0" prefHeight="138.0" prefWidth="1025.0" styleClass="anchor-pane3" stylesheets="@../resource/KinalMallCss.css">
+         <children>
+            <GridPane fx:id="grpFechaLimite" layoutX="20.0" layoutY="14.0" prefHeight="108.0" prefWidth="985.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="208.0" minWidth="10.0" prefWidth="176.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="234.0" minWidth="10.0" prefWidth="152.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="235.0" minWidth="10.0" prefWidth="137.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="236.0" minWidth="10.0" prefWidth="201.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="259.0" minWidth="10.0" prefWidth="150.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="270.0" minWidth="10.0" prefWidth="164.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label prefHeight="21.0" prefWidth="172.0" text="Cod. Cuentas Por Pagar">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtCodigoCuentaPorPagar" editable="false" prefHeight="31.0" prefWidth="124.0" GridPane.columnIndex="1">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+                  <Label prefHeight="21.0" prefWidth="132.0" text=" Numero Factura" GridPane.columnIndex="2">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtNumeroFactura" editable="false" prefHeight="31.0" prefWidth="124.0" GridPane.columnIndex="3">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="txtEstadoPago" editable="false" prefHeight="31.0" prefWidth="124.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="txtValorNetoPago" editable="false" prefHeight="31.0" prefWidth="124.0" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+                  <Label prefHeight="21.0" prefWidth="132.0" text="Estado Pago" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="21.0" prefWidth="132.0" text=" Valor Neto Pago" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="21.0" prefWidth="132.0" text=" Fecha Limite" GridPane.columnIndex="4">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="21.0" prefWidth="147.0" text=" Cod Administracion" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="21.0" prefWidth="132.0" text=" Cod Proveedor" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <ComboBox fx:id="cmbCodigoAdministracion" disable="true" prefHeight="25.0" prefWidth="193.0" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+                  <ComboBox fx:id="cmbCodigoProveedor" disable="true" prefHeight="25.0" prefWidth="209.0" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+               </children>
+            </GridPane>
+            <Button layoutX="885.0" layoutY="97.0" mnemonicParsing="false" onAction="#ventanaProveedor" prefHeight="34.0" prefWidth="125.0" style="-fx-background-radius: 0 0 0 0;" styleClass="button2" stylesheets="@../resource/KinalMallCss.css" text="Proveedores" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <TableView fx:id="tblCuentasPorPagar" layoutX="207.0" layoutY="152.0" onKeyReleased="#seleccionarElemento" onMouseClicked="#seleccionarElemento" prefHeight="333.0" prefWidth="997.0" stylesheets="@../resource/KinalMallCss.css">
+         <columns>
+            <TableColumn fx:id="colCodigoCuentaPorPagar" prefWidth="146.0" text="cod. Cuentas Por Pagar" />
+            <TableColumn fx:id="colNumeroFactura" prefWidth="135.0" text="Numero Factura" />
+            <TableColumn fx:id="colFechaLimitePago" prefWidth="144.0" text="Fecha Limite" />
+            <TableColumn fx:id="colEstadoPago" prefWidth="157.0" text="Estado Pago" />
+            <TableColumn fx:id="colValorNetoPago" prefWidth="137.0" text="Valor Neto Pago" />
+            <TableColumn fx:id="colCodigoAdministracion" prefWidth="151.0" text="cod. Administracion" />
+            <TableColumn fx:id="colCodigoProveedor" prefWidth="126.0" text="cod Proveedor" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

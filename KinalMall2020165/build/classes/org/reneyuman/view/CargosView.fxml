@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="499.0" prefWidth="915.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.reneyuman.controller.CargosController">
+   <children>
+      <AnchorPane prefHeight="499.0" prefWidth="193.0" styleClass="anchor-pane2" stylesheets="@../resource/KinalMallCss.css">
+         <children>
+            <AnchorPane layoutX="4.0" layoutY="-1.0" prefHeight="167.0" prefWidth="186.0" style="-fx-background-radius: 0 0 50 50;" styleClass="anchor-pane3" stylesheets="@../resource/KinalMallCss.css">
+               <children>
+                  <ImageView fitHeight="128.0" fitWidth="136.0" layoutX="30.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/Cargos.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="66.0" layoutY="14.0" prefHeight="26.0" prefWidth="55.0" text="Cargos">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <Button fx:id="btnNuevo" layoutX="91.0" layoutY="199.0" mnemonicParsing="false" onAction="#nuevo" prefHeight="34.0" prefWidth="83.0" style="-fx-background-radius: 0 0 0 0;" styleClass="button2" stylesheets="@../resource/KinalMallCss.css" text="Nuevo" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnEditar" layoutX="90.0" layoutY="311.0" mnemonicParsing="false" onAction="#editar" prefHeight="34.0" prefWidth="83.0" style="-fx-background-radius: 0 0 0 0;" styleClass="button2" text="Editar" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnEliminar" layoutX="91.0" layoutY="256.0" mnemonicParsing="false" onAction="#eliminar" prefHeight="34.0" prefWidth="83.0" style="-fx-background-radius: 0 0 0 0;" styleClass="button2" stylesheets="@../resource/KinalMallCss.css" text="Eliminar" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnReporte" layoutX="91.0" layoutY="368.0" mnemonicParsing="false" onAction="#reporte" prefHeight="34.0" prefWidth="83.0" style="-fx-background-radius: 0 0 0 0;" styleClass="button2" stylesheets="@../resource/KinalMallCss.css" text="Reporte" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <ImageView fx:id="imgNuevo" fitHeight="46.0" fitWidth="46.0" layoutX="30.0" layoutY="197.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Añadir2.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgEditar" fitHeight="46.0" fitWidth="46.0" layoutX="28.0" layoutY="308.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Editar.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgEliminar" fitHeight="46.0" fitWidth="46.0" layoutX="31.0" layoutY="252.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Eliminar.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgReporte" fitHeight="46.0" fitWidth="40.0" layoutX="33.0" layoutY="365.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Informe.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="38.0" fitWidth="48.0" layoutX="78.0" layoutY="447.0" onMouseClicked="#menuPrincipal" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Casita.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="193.0" prefHeight="105.0" prefWidth="725.0" styleClass="anchor-pane3" stylesheets="@../resource/KinalMallCss.css">
+         <children>
+            <GridPane layoutX="24.0" layoutY="38.0" prefHeight="30.0" prefWidth="568.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="208.0" minWidth="10.0" prefWidth="132.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="234.0" minWidth="10.0" prefWidth="133.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="235.0" minWidth="10.0" prefWidth="135.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="252.0" minWidth="10.0" prefWidth="194.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label prefHeight="21.0" prefWidth="170.0" text="Codigo Cargos">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" text=" Nombre Cargo" GridPane.columnIndex="2">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtCodigoCargos" editable="false" prefHeight="31.0" prefWidth="179.0" GridPane.columnIndex="1">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="txtNombreCargos" editable="false" prefHeight="31.0" prefWidth="192.0" GridPane.columnIndex="3">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </GridPane>
+            <Button fx:id="btnNuevo1" layoutX="616.0" layoutY="48.0" mnemonicParsing="false" onAction="#ventanaEmpleados" prefHeight="34.0" prefWidth="83.0" style="-fx-background-radius: 0 0 0 0;" styleClass="button2" stylesheets="@../resource/KinalMallCss.css" text="Empleados" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <TableView fx:id="tblCargos" layoutX="209.0" layoutY="121.0" onKeyReleased="#seleccionarElemento" onMouseClicked="#seleccionarElemento" prefHeight="369.0" prefWidth="693.0" stylesheets="@../resource/KinalMallCss.css">
+         <columns>
+            <TableColumn fx:id="colCodigoCargos" prefWidth="198.0" text="Codigo Departamento" />
+            <TableColumn fx:id="colNombreCargos" prefWidth="494.0" text="Nombre de Departamento" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

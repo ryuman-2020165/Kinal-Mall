@@ -1,0 +1,177 @@
+.menu-bar {
+    -fx-background-color: black ;
+    -fx-opacity: 0.5;
+    -fx-border-width: 2.0;
+
+}
+.menu-bar .label {
+    -fx-font-size: 14.0 pt;
+    -fx-font-family: "Bookman Old Style";
+    -fx-text-fill: white;
+    -fx-font-weight: bold; 
+    -fx-padding: 10.0px;
+
+}
+
+.menu-bar .menu-button:hover, .menu-bar .menu-button:focused, .menu-bar .menu-button:showing {
+    -fx-background: black ;
+    -fx-opacity: 0.5;
+    -fx-text-fill: white;
+}
+
+.menu-item {
+    -fx-padding: 0.0em 0.0em 0.0em 0.0em;
+    -fx-text-fill: black;
+    -fx-background: darkgray ;
+}
+.menu-item .label{
+    -fx-font-size: 14.0 pt;
+    -fx-text-fill: black;
+}
+.menu-item .label:hover{
+    -fx-font-size: 14.0 pt;
+    -fx-background: black ;
+    -fx-text-fill: white;
+}
+.context-menu {
+    -fx-skin: "com.sun.javafx.scene.control.skin.ContextMenuSkin";
+    -fx-background-color:white ;
+    -fx-border-width: 0.2px;
+    -fx-border-color: black;
+    /** -fx-background-insets: 0.0, 1.0, 2.0;
+    -fx-background-radius: 0.0 6.0 6.0 6.0, 0.0 5.0 5.0 5.0, 0.0 4.0 4.0 4.0;
+    -fx-padding: 0.333333em 0.083333em 0.666667em 0.083333em; 
+    -fx-opacity: 0.9;*/
+}
+
+.anchor-pane1{
+    
+    -fx-background-color: #FFFFFF;
+    
+     /*C5F1FF*/
+    
+}
+
+
+
+
+
+
+.anchor-pane2{
+    
+    -fx-background-color: #97EBFF;
+    
+    
+    
+}
+
+.anchor-pane3{
+    
+    -fx-background-color: #C5F1FF;
+    
+    
+    
+}
+
+.anchor-pane4{
+    
+    -fx-background-color: #C5F1FF;
+    -fx-background-radius: 30 0 0 0;
+    
+    
+}
+
+.button1{
+    
+    -fx-background-color: #97EBFF;
+    
+    -fx-background-radius: 5 5 5 5;
+    
+}
+
+.button1:hover{
+    -fx-background-color: #6CE1FC;
+    
+    -fx-background-radius: 5 5 5 5;
+}
+
+.button1:pressed{
+    -fx-background-color: #FFFFFF;
+    
+    -fx-background-radius: 5 0 0 5;
+    
+    /*75DAF1*/
+    
+}
+
+.button2{
+    
+    -fx-background-color: #fb7174;
+    
+}
+
+.button2:hover{
+    -fx-background-color: #dd5153;
+    
+    -fx-background-radius: 5 5 5 5;
+}
+
+.button2:pressed{
+    -fx-background-color: #FC8C7F;
+    
+    -fx-background-radius: 5 0 0 5;
+    
+    /*75DAF1*/
+    
+}
+
+
+.paneusuarios{
+    
+    -fx-background-color: #fb7174;
+    
+    
+}
+
+
+.IngresotextoUsuarios{
+    
+    -fx-background-color: transparent;
+    -fx-border-color: #000000;
+    -fx-border-width: 0px 0px 2px 0px;
+    
+    
+    /*75DAF1*/
+    
+}
+
+
+
+.table-view .column-header,
+.table-view .column-header-background .filler {
+-fx-cell-size : 20;
+-fx-background-color: #326D6B;
+
+}
+.table-view .column-header .label{
+
+
+
+-fx-text-fill: white;
+-fx-font-weight: bold;
+-fx-alignment: CENTER;
+}
+.table-view .cell{
+-fx-cell-size: 30;
+-fx-alignment: center-left;
+-fx-text-fill: #000000;
+}
+
+
+
+.table-row-cell:selected {
+-fx-background-color: rgb(127, 172, 243);
+}
+.table-row-cell:selected .text {
+-fx-fill : white ;
+}
